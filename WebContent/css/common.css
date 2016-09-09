@@ -1,0 +1,71 @@
+body{font-family:"Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif}h1,.h1,h2,.h2,h3,.h3,h4,.h4,.lead{font-family:"Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif}body{padding-top:30px}
+
+a:hover{
+	text-decoration: none; 
+}
+a:focus{
+	color: #adb;
+	text-decoration: none;
+}
+a.active{
+	color: #adb;
+}
+.adb{
+	color: #adb;
+}
+.footer{
+	color: #777;
+    padding: 30px 0;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 70px;
+    display: block;
+}
+
+.main{
+	text-align : center;
+}
+.main .thumbnail{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 310px;
+    margin-bottom: 30px;
+    border-radius: 0;
+}
+
+.footer-top .about>div{
+	height:110px;
+	margin-bottom:10px
+}
+.footer-top .about>div h4{
+	color:#563d7c;
+	font-size:16px
+}
+.footer-bottom{
+	font-size:13px
+}
+.footer-bottom ul>li{
+	padding:0
+}
+.footer-bottom ul>li+li:before{
+	padding:0 10px;
+	color:#ccc;
+	content:"|"
+}
+
+.main .thumbnail .caption
+{
+	height:200px;
+	overflow-y:hidden;
+	color:#555
+}
+.main .thumbnail .caption a:hover,.projects .thumbnail .caption a:focus
+{
+	text-decoration:none
+}
+.main .thumbnail img
+{
+	max-width:100%;
+	height:auto
+}
