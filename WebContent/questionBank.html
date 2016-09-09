@@ -48,7 +48,7 @@
         					来源<br/><br/>
         					<div>
         						<a href="#" class="active" >平台&nbsp&nbsp</a>
-        						<a href="#" id="pingtai">个人</a>
+        						<a href="#">个人</a>
         					</div>
         				</li>
         				<li class="list-group-item">
@@ -250,10 +250,9 @@
         <script src="./js/bootstrap.min.js"></script>
         <script type="text/javascript">
        		$(document).ready(function(){
-       			var 
-        		$("li.list-group-item a").click(function(){
-        			$(this).addClass("adb");
-        		});
+       			$("li.list-group-item a").click(function(){
+       				$(this).toggleClass("adb");
+       			});
        		});
         </script>
         
