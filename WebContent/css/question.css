@@ -1,0 +1,11 @@
+.skin-section {
+    float: left;
+}
+
+.list{
+	padding-top: 10px;
+	list-style:none;  
+}
+.list li{
+	padding-top: 10px;
+}

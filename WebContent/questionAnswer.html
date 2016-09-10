@@ -1,0 +1,274 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<link rel="stylesheet" media="screen"  href="./css/bootstrap.css" type="text/css" />
+		<link rel="stylesheet" media="screen"  href="./css/common.css" type="text/css"/>
+		<link href="./square/red.css" rel="stylesheet">
+		<link href="./css/question.css" rel="stylesheet">
+        <script src="./js/jquery-3.1.0.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+		<script src="./js/jquery.icheck.min.js"></script>
+   	 	<script src="./js/jquery.unveil.min.js"></script>
+    	<script src="./js/jquery.scrollUp.min.js"></script>
+    	<script src="./js/jquery.matchHeight-min.js"></script>
+	</head>
+	
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<!-- 导航条 -->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+        	<div class="container">
+		        <div class="navbar-header">
+		          	<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+		            	<span class="sr-only">Toggle navigation</span>
+		            	<span class="icon-bar"></span>
+		            	<span class="icon-bar"></span>
+		           	 	<span class="icon-bar"></span>
+		          	</button>
+		          	<a class="navbar-brand hidden-sm" href="#">大爷叫你来刷题</a>
+		        </div>
+        	 	<div class="navbar-collapse collapse" role="navigation">
+        	 	 	<ul class="nav navbar-nav">
+            			<li><a href="index.html" target="_self">首页</a></li>
+           				<li><a href="#" target="_self">课程</a></li>
+            			<li><a href="questionBank.html" target="_self">题库</a></li>
+            			<li><a href="#" target="_self">排行榜</a></li>
+            			<li><a href="#" target="_self">讨论区</a></li>
+          			</ul>
+          			<ul class="nav navbar-nav navbar-right">
+            			<li><a href="#" target="_self">登录</a></li>
+          			</ul>
+        		</div>
+        	</div>
+        </div>
+<!-- 撑出一段空间 --> 
+        <div style="height:100px">        </div>
+
+<!-- 主题内容 -->
+        <div class="main container" style="text-align:left">
+        	<div class="col-lg-12">
+        		<div class="skin-section ">
+        			<h4>1. 下面哪一个不是动态链接库的优点？</h4>
+	        		<ul class="list">
+		                <li>
+			                  <input type="radio" id="square-radio-1" name="text1" disabled checked>
+			                  <label for="square-radio-1">共享</label>
+		                </li>
+		                <li>
+			                  <input type="radio" id="square-radio-2" name="text1" disabled>
+			                  <label for="square-radio-2">转载速度快</label>
+		                </li>
+		                <li>
+			                  <input type="radio" id="square-radio-3" name="text1" disabled>
+			                  <label for="square-radio-3">开发模式好</label>
+		                </li>
+		                <li>
+			                  <input type="radio" id="square-radio-4" name="text1" disabled>
+			                  <label for="square-radio-4">减少页面交换</label>
+		                </li>
+	              	</ul>
+	              	<div class="well well-lg">
+	              		正确答案是B<br/>
+	              		解析：1 静态链接库的优点 <br/>
+							 (1) 代码装载速度快，执行速度略比动态链接库快； <br/>
+							 (2) 只需保证在开发者的计算机中有正确的.LIB文件，在以二进制形式发布程序时不需考虑在用户的计算机上.LIB文件是否存在及版本问题，可避免DLL地狱等问题。 <br/>
+							2 动态链接库的优点 <br/>
+							 (1) 更加节省内存并减少页面交换；<br/>
+							 (2) DLL文件与EXE文件独立，只要输出接口不变（即名称、参数、返回值类型和调用约定不变），更换DLL文件不会对EXE文件造成任何影响，因而极大地提高了可维护性和可扩展性；<br/>
+							 (3) 不同编程语言编写的程序只要按照函数调用约定就可以调用同一个DLL函数；<br/>
+							 (4)适用于大规模的软件开发，使开发过程独立、耦合度小，便于不同开发者和开发组织之间进行开发和测试。<br/>
+							3 不足之处<br/>
+							 (1) 使用静态链接生成的可执行文件体积较大，包含相同的公共代码，造成浪费；<br/>
+							 (2) 使用动态链接库的应用程序不是自完备的，它依赖的DLL模块也要存在，如果使用载入时动态链接，程序启动时发现DLL不存在，系统将终止程序并给出错误信息。而使用运行时动态链接，系统不会终止，但由于DLL中的导出函数不可用，程序会加载失败；速度比静态链接慢。当某个模块更新后，如果新模块与旧的模块不兼容，那么那些需要该模块才能运行的软件，统统撕掉。这在早期Windows中很常见。
+	              	</div>
+              	</div>
+        	</div>
+        	<div class="col-lg-12">
+        		<div class="skin-section ">
+        			<h4>2. n个数值选出最大m个数(3&lt;m&lt;n)的最小算法复杂度是</h4>
+	        		<ul class="list">
+		                <li>
+			                  <input tabindex="1" type="radio" id="square-radio-5" name="text2" disabled>
+			                  <label for="square-radio-5">O(n)</label>
+		                </li>
+		                <li>
+			                  <input tabindex="2" type="radio" id="square-radio-6" name="text2" disabled checked>
+			                  <label for="square-radio-6">O(nlogn)</label>
+		                </li>
+		                <li>
+			                  <input tabindex="3" type="radio" id="square-radio-7" name="text2" disabled>
+			                  <label for="square-radio-7">O(logn)</label>
+		                </li>
+		                <li>
+			                  <input tabindex="4" type="radio" id="square-radio-8" name="text2" disabled>
+			                  <label for="square-radio-8">O(mlogn)</label>
+		                </li>
+		                <li>
+			                  <input tabindex="4" type="radio" id="square-radio-9" name="text2" disabled>
+			                  <label for="square-radio-9">O(nlogm)</label>
+		                </li>
+		                <li>
+			                  <input tabindex="4" type="radio" id="square-radio-10" name="text2" disabled>
+			                  <label for="square-radio-10">O(mn)</label>
+		                </li>
+	              	</ul>
+	            	<div class="well well-lg">
+	              		正确答案是E<br/>
+	              		解析：剑指offer第30题<br/>
+								1.最简单的方法：将n个数排序，排序后的前k个数就是最大的k个数，这种算法的复杂度是O（nlogn）<br/>
+								2.O（n）的方法：利用快排的patition思想，基于数组的第k个数来调整，将比第k个数小的都位于数组的左边，比第k个数大的都调整到数组的右边，这样调整后，位于数组右边的k个数最大的k个数(这k个数不一定是排好序的）<br/>
+								3.O(nlogk）的方法：先创建一个大小为k的最小堆，接下来我们每次从输入的n个整数中读入一个数，如果这个数比最小堆的堆顶元素还要大，那么替换这个最小堆的堆顶并调整。<br/>
+	             	</div>
+              	</div>
+        	</div>
+        	<div class="col-lg-12">
+        		<div class="skin-section ">
+        			<h4>3. 有权值分别为1/12/13/4/8的叶子节点，生成一棵哈夫曼树，它的带权路径长度是()</h4>
+	        		<ul class="list">
+		                <li>
+			                  <input tabindex="1" type="radio" id="square-radio-11" name="text3" disabled>
+			                  <label for="square-radio-11">12</label>
+		                </li>
+		                <li>
+			                  <input tabindex="2" type="radio" id="square-radio-12" name="text3" disabled>
+			                  <label for="square-radio-12">68</label>
+		                </li>
+		                <li>
+			                  <input tabindex="3" type="radio" id="square-radio-13" name="text3" disabled checked>
+			                  <label for="square-radio-13">43</label>
+		                </li>
+		                <li>
+			                  <input tabindex="4" type="radio" id="square-radio-14" name="text3" disabled>
+			                  <label for="square-radio-14">6</label>
+		                </li>
+		                <li>
+			                  <input tabindex="5" type="radio" id="square-radio-15" name="text3" disabled>
+			                  <label for="square-radio-14">25</label>
+		                </li>
+		                <li>
+			                  <input tabindex="6" type="radio" id="square-radio-16" name="text3" disabled>
+			                  <label for="square-radio-14">81</label>
+		                </li>
+	              	</ul>
+	              	<div class="well well-lg">
+	              		正确答案是F<br/>
+	              		解析：Hoffman树如下：<br/>
+							 &nbsp;&nbsp;38<br/>
+							 *13&nbsp;&nbsp;25<br/>
+							  &nbsp;&nbsp;&nbsp;*12&nbsp;&nbsp;13<br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp; *8<br/>
+							   &nbsp;&nbsp;&nbsp;&nbsp;*1&nbsp;&nbsp;*4      <br/>
+							其中带*为原始元素，总共4层（不算根节点） 带权路径长度 13*1 + 12*2 + 8*3 + （1+4）*4 = 81
+	            	 </div>
+              	</div>
+        	</div>
+        	<div class="col-lg-12">
+        		<div class="skin-section ">
+        			<h4>4. 阿里巴巴国际站的股票代码是1688，这个数字具有这样的特性，首先是个首位为1的4位数，其次是恰好有且仅有1个数字出现了两次。类似的数字还有：1861、1668等。这样的数字一共有()个。</h4>
+	        		<ul class="list">
+		                <li>
+			                  <input tabindex="1" type="radio" id="square-radio-17" name="text4" disabled>
+			                  <label for="square-radio-17">144</label>
+		                </li>
+		                <li>
+			                  <input tabindex="2" type="radio" id="square-radio-18" name="text4" disabled>
+			                  <label for="square-radio-18">180</label>
+		                </li>
+		                <li>
+			                  <input tabindex="3" type="radio" id="square-radio-19" name="text4" disabled>
+			                  <label for="square-radio-19">216</label>
+		                </li>
+		                <li>
+			                  <input tabindex="4" type="radio" id="square-radio-20" name="text4" disabled checked>
+			                  <label for="square-radio-20">270</label>
+		                </li>
+		                <li>
+			                  <input tabindex="4" type="radio" id="square-radio-21" name="text4" disabled >
+			                  <label for="square-radio-21">288</label>
+		                </li>
+		                <li>
+			                  <input tabindex="4" type="radio" id="square-radio-22" name="text4" disabled >
+			                  <label for="square-radio-22">432</label>
+		                </li>
+	              	</ul>
+	              	<div class="well well-lg">
+	              		正确答案是F<br/>
+	              		解析：分两种情况讨论：<br/>
+							（1）若这个四位数的重复数字为1，那么首先从三个空位中选出一个给1，第二步从剩下9个可选数字中选出2个有序的排列到剩下的两个空位中去，那么有C(1，3)*A(2，9)=3*(9!/(9-2)!)=3*9*8=216种可能；<br/>
+							（2）若这个四位数的重复数字不为1，那么首先从9个可选数字中选出一个作为重复数字(C(1,9))，并放到三个空位中的两个（这两个数字相同，故只涉及组合）(C(2, 3))，然后从剩下8个数字中选出一个（它的位置在重复数字确定后就自然固定了，不可选）即可，故有C(1,9)*C(2, 3)*C(1, 8)=216种可能。<br/>
+							总共：216+216=432
+	            	 </div>
+              	</div>
+        	</div>
+        	<div style="text-align: center">
+        		<a href="questionBank.html" target="_self"><button type="button" class="btn btn-primary btn-lg">返回题库</button></a>
+        	</div>
+        </div>
+
+
+
+        
+<!-- 页面底部 -->
+        <footer class="footer">
+        
+        	<div class="container">
+        		<div class="row footer-top">
+        			<div class="col-sm-6 col-lg-6">
+        				<h4><img class="img-responsive" src="./images/name.png"></h4>
+        				<p>30年专注做IT的面试题，让我们成为时代科技的建筑师。</p>
+        			</div>
+        			<div class="col-sm-6  col-lg-5 col-lg-offset-1">
+        				<div class="row ablout">
+        					<div class="col-xs-3">
+        						<h4>成员</h4>
+        						<ul class="list-unstyled">
+        							<li>刘远深</li>
+        							<li>李晓鹏</li>
+        							<li>张雄峰</li>
+        						</ul>
+        					</div>
+        					<div class="col-xs-3">
+        						<h4>&nbsp</h4>
+        						<ul class="list-unstyled">
+        							<li>林子伦</li>
+        							<li>程俊森</li>
+        							<li>吴晓玉</li>
+        						</ul>
+        					</div>
+        					<div class="col-xs-3">
+        						<h4>&nbsp</h4>
+        						<ul class="list-unstyled">
+        							<li>曾梓泽</li>
+        							<li>陈玉娇</li>
+        						</ul>
+        					</div>
+        					<div class="col-xs-3">
+        						<h4>&nbsp</h4>
+        						<ul class="list-unstyled">
+        							<li>庄建春</li>
+        							<li>李秀敏</li>
+        						</ul>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </footer>
+        
+        <!-- 添加单选框复选框插件库 -->
+        <script>
+		$(document).ready(function(){
+		  $('input').iCheck({
+		    checkboxClass: 'icheckbox_square-red',
+		    radioClass: 'iradio_square-red',
+		    increaseArea: '20%' // optional
+		  });
+		});
+		</script>
+        
+    </body>
+</html>                                                                     
